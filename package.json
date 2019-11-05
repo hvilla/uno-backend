@@ -1,0 +1,55 @@
+{
+  "name": "uno-backend",
+  "version": "1.0.0",
+  "description": " Practice for development, uno game API Rest",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node index.js",
+    "test": "mocha  --require @babel/register ./src/api/v1/tests/*.js --recursive --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hvilla/uno-backend.git"
+  },
+  "keywords": [
+    "uno",
+    "game",
+    "practice",
+    "development",
+    "rest",
+    "api",
+    "node",
+    "javascript"
+  ],
+  "author": "HVP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hvilla/uno-backend/issues"
+  },
+  "homepage": "https://github.com/hvilla/uno-backend#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.7.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.8",
+    "moongoose": "^0.0.5",
+    "yarn": "^1.19.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.0",
+    "@babel/node": "^7.7.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "colors": "^1.4.0",
+    "faker": "^4.1.0",
+    "mocha": "^6.2.2",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4"
+  }
+}
