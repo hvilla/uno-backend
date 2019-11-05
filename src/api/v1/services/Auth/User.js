@@ -11,7 +11,7 @@ class UserService{
 
     static async getUserById(id){
         try {
-            return await Auth_User.findById(id);
+            return await Auth_User.findById(id).select('-password');
         } catch (err) {
             throw err;
         }
