@@ -2,6 +2,7 @@ import colors from 'colors';
 import UserService from '../../services/Auth/User';
 
 class UserController{
+    
     static async createUser(req,res){
         const data = req.body;
         try{
@@ -23,6 +24,7 @@ class UserController{
         }
         
     }
+
 }
 
 export default UserController;
